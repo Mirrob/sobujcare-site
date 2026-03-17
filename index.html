@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SobujCare | Pure Care From Nature</title>
+  <meta name="description" content="SobujCare herbal soap website with Bangla/English toggle, package pricing calculator, and Google Sheets order form integration." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="#home" class="brand" aria-label="SobujCare home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>SobujCare</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#products" data-i18n="navProducts">Products</a>
+        <a href="#gallery" data-i18n="navGallery">Gallery</a>
+        <a href="#packages" data-i18n="navPackages">Packages</a>
+        <a href="#calculator" data-i18n="navOrder">Order</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-toggle" aria-label="Language toggle">
+          <button type="button" class="active" data-lang-btn="en">EN</button>
+          <button type="button" data-lang-btn="bn">BN</button>
+        </div>
+        <a href="#calculator" class="btn btn-primary" data-i18n="navButton">Order Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <div class="eyebrow" data-i18n="heroEyebrow">Herbal Soap Crafted for Everyday Skin Care</div>
+          <h1 data-i18n="heroTitle">Pure Care From Nature</h1>
+          <p class="lead" data-i18n="heroText">Discover SobujCare’s premium herbal soaps made for clean, gentle, and natural skin care. Start with our best-selling handmade herbal range and choose a package that fits your needs.</p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary" data-i18n="heroPrimary">Explore Products</a>
+            <a href="#calculator" class="btn btn-secondary" data-i18n="heroSecondary">Calculate Order</a>
+          </div>
+          <div class="hero-points">
+            <div class="mini-point">
+              <strong data-i18n="point1Title">Natural Ingredients</strong>
+              <span class="small" data-i18n="point1Text">Neem, turmeric, charcoal, aloe vera and skin-friendly oils.</span>
+            </div>
+            <div class="mini-point">
+              <strong data-i18n="point2Title">Eco Packaging</strong>
+              <span class="small" data-i18n="point2Text">Minimal kraft packaging designed for a premium feel.</span>
+            </div>
+            <div class="mini-point">
+              <strong data-i18n="point3Title">Flexible Packages</strong>
+              <span class="small" data-i18n="point3Text">Single bars, bundles, and family packages with live pricing.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card hero-showcase">
+          <div class="hero-photo">
+            <img src="assets/images/hero-soap.svg" alt="SobujCare Herbal Soap Hero" />
+          </div>
+          <div class="calc-box">
+            <div class="summary-row"><span data-i18n="heroPriceLine1">Starting from</span><strong>৳199</strong></div>
+            <div class="summary-row"><span data-i18n="heroPriceLine2">Bundle savings</span><strong data-i18n="heroPriceLine2Value">Up to 15%</strong></div>
+            <div class="summary-row total"><span data-i18n="heroPriceLine3">Custom order form</span><strong data-i18n="heroPriceLine3Value">Google Sheet Ready</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 data-i18n="productsTitle">Our Herbal Soap Collection</h2>
+            <p data-i18n="productsText">Start with a focused product line that is easy to market and simple for customers to understand.</p>
+          </div>
+        </div>
+
+        <div class="products-grid">
+          <article class="card product-card">
+            <div class="product-image"><img src="assets/images/neem-soap.svg" alt="Neem Antibacterial Soap"></div>
+            <div class="product-top">
+              <div>
+                <h3 data-i18n="p1Title">Neem Antibacterial</h3>
+                <p data-i18n="p1Desc">Made for oily skin and everyday freshness.</p>
+              </div>
+              <span class="badge" data-i18n="p1Badge">Best Seller</span>
+            </div>
+            <ul class="list">
+              <li data-i18n="p1L1">Neem extract and skin-friendly oils</li>
+              <li data-i18n="p1L2">Helps support clean and refreshed skin</li>
+              <li data-i18n="p1L3">Ideal for daily use</li>
+            </ul>
+            <div class="price">৳199</div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-image"><img src="assets/images/turmeric-soap.svg" alt="Turmeric Glow Soap"></div>
+            <div class="product-top">
+              <div>
+                <h3 data-i18n="p2Title">Turmeric Glow</h3>
+                <p data-i18n="p2Desc">A warm herbal blend for soft and bright-looking skin.</p>
+              </div>
+              <span class="badge" data-i18n="p2Badge">Popular</span>
+            </div>
+            <ul class="list">
+              <li data-i18n="p2L1">Turmeric-inspired care for daily skincare</li>
+              <li data-i18n="p2L2">Comforting feel with premium packaging</li>
+              <li data-i18n="p2L3">Great for gifting and bundles</li>
+            </ul>
+            <div class="price">৳219</div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-image"><img src="assets/images/charcoal-soap.svg" alt="Activated Charcoal Soap"></div>
+            <div class="product-top">
+              <div>
+                <h3 data-i18n="p3Title">Activated Charcoal</h3>
+                <p data-i18n="p3Desc">Detox-style herbal soap with a strong premium identity.</p>
+              </div>
+              <span class="badge" data-i18n="p3Badge">Premium</span>
+            </div>
+            <ul class="list">
+              <li data-i18n="p3L1">Charcoal-based deep cleansing concept</li>
+              <li data-i18n="p3L2">Strong look for modern buyers</li>
+              <li data-i18n="p3L3">Perfect for combo offers</li>
+            </ul>
+            <div class="price">৳229</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 data-i18n="galleryTitle">Packaging Preview</h2>
+            <p data-i18n="galleryText">Use these sample visuals first, then replace them later with your final product photos and real packaging shots.</p>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <img src="assets/images/packaging-1.svg" alt="SobujCare packaging style one">
+            <div class="gallery-copy">
+              <h3 data-i18n="g1Title">Neem Premium Box</h3>
+              <p data-i18n="g1Text">Minimal kraft look with bold green strip for a strong shelf presence.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <img src="assets/images/packaging-2.svg" alt="SobujCare packaging style two">
+            <div class="gallery-copy">
+              <h3 data-i18n="g2Title">Turmeric Botanical Box</h3>
+              <p data-i18n="g2Text">Warm botanical style with premium eco-friendly presentation.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <img src="assets/images/packaging-3.svg" alt="SobujCare packaging style three">
+            <div class="gallery-copy">
+              <h3 data-i18n="g3Title">Gift Bundle Mockup</h3>
+              <p data-i18n="g3Text">A stronger premium presentation for combo sales and gifting campaigns.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="packages">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 data-i18n="packagesTitle">Packages & Bundles</h2>
+            <p data-i18n="packagesText">Use package pricing to increase average order value and make customer choice easier.</p>
+          </div>
+        </div>
+
+        <div class="packages-grid">
+          <article class="card package-card">
+            <h3 data-i18n="pack1Title">Starter Pack</h3>
+            <p data-i18n="pack1Desc">Perfect for first-time buyers who want to try one or two variants.</p>
+            <ul class="list">
+              <li data-i18n="pack1L1">2 soaps of any variant</li>
+              <li data-i18n="pack1L2">Standard eco packaging</li>
+              <li data-i18n="pack1L3">Entry-level discount</li>
+            </ul>
+            <div class="price">৳399</div>
+          </article>
+
+          <article class="card package-card highlight">
+            <div class="ribbon" data-i18n="pack2Ribbon">Most Loved</div>
+            <h3 data-i18n="pack2Title">Family Pack</h3>
+            <p data-i18n="pack2Desc">Balanced option for regular customers and small households.</p>
+            <ul class="list">
+              <li data-i18n="pack2L1">4 soaps mixed variants</li>
+              <li data-i18n="pack2L2">Better per-piece value</li>
+              <li data-i18n="pack2L3">Great for repeat orders</li>
+            </ul>
+            <div class="price">৳759</div>
+          </article>
+
+          <article class="card package-card">
+            <h3 data-i18n="pack3Title">Gift / Premium Pack</h3>
+            <p data-i18n="pack3Desc">Designed for gifting, premium orders, and social media campaigns.</p>
+            <ul class="list">
+              <li data-i18n="pack3L1">6 soaps mixed variants</li>
+              <li data-i18n="pack3L2">Premium eco presentation</li>
+              <li data-i18n="pack3L3">Best total savings</li>
+            </ul>
+            <div class="price">৳1,099</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculator">
+      <div class="container pricing-area">
+        <div class="card calc-card">
+          <div class="section-head compact">
+            <div>
+              <h2 data-i18n="calcTitle">Live Order Calculator</h2>
+              <p data-i18n="calcText">Choose soaps, package type, and quantity to see the live estimated total.</p>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="variant1" data-i18n="variant1Label">Variant 1</label>
+              <select id="variant1">
+                <option value="Neem Antibacterial">Neem Antibacterial</option>
+                <option value="Turmeric Glow">Turmeric Glow</option>
+                <option value="Activated Charcoal">Activated Charcoal</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="variant2" data-i18n="variant2Label">Variant 2</label>
+              <select id="variant2">
+                <option value="Turmeric Glow">Turmeric Glow</option>
+                <option value="Neem Antibacterial">Neem Antibacterial</option>
+                <option value="Activated Charcoal">Activated Charcoal</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="packageType" data-i18n="packageLabel">Package Type</label>
+              <select id="packageType">
+                <option value="single">Single Bar</option>
+                <option value="starter">Starter Pack (2)</option>
+                <option value="family">Family Pack (4)</option>
+                <option value="gift">Gift Pack (6)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="quantity" data-i18n="quantityLabel">Quantity</label>
+              <input id="quantity" type="number" min="1" value="1" />
+            </div>
+          </div>
+
+          <div class="calc-box top-gap">
+            <div class="calc-row"><span data-i18n="summaryPackage">Selected Package</span><strong id="summaryPackage">Single Bar</strong></div>
+            <div class="calc-row"><span data-i18n="summaryPerPack">Price Per Package</span><strong id="summaryPerPack">৳199</strong></div>
+            <div class="calc-row"><span data-i18n="summaryQty">Order Quantity</span><strong id="summaryQty">1</strong></div>
+            <div class="calc-row"><span data-i18n="summaryDiscount">Bundle Savings</span><strong id="summaryDiscount">৳0</strong></div>
+            <div class="summary-row total"><span data-i18n="summaryTotal">Estimated Total</span><strong id="summaryTotal">৳199</strong></div>
+          </div>
+
+          <p class="calc-note top-gap-sm" data-i18n="calcNote">You can adjust the pricing rules easily in the JavaScript section before going live.</p>
+        </div>
+
+        <div class="card form-card">
+          <div class="section-head compact">
+            <div>
+              <h2 data-i18n="orderTitle">Place an Order</h2>
+              <p data-i18n="orderText">Orders can be sent straight to Google Sheets using your Google Apps Script web app URL.</p>
+            </div>
+          </div>
+
+          <form id="orderForm" class="form-grid">
+            <div class="field">
+              <label for="customerName" data-i18n="nameLabel">Full Name</label>
+              <input id="customerName" name="customerName" required />
+            </div>
+            <div class="field">
+              <label for="phone" data-i18n="phoneLabel">Phone Number</label>
+              <input id="phone" name="phone" required />
+            </div>
+            <div class="field">
+              <label for="email" data-i18n="emailLabel">Email (Optional)</label>
+              <input id="email" name="email" type="email" />
+            </div>
+            <div class="field">
+              <label for="district" data-i18n="districtLabel">District / Area</label>
+              <input id="district" name="district" />
+            </div>
+            <div class="field full">
+              <label for="address" data-i18n="addressLabel">Delivery Address</label>
+              <textarea id="address" name="address" required></textarea>
+            </div>
+            <div class="field">
+              <label for="preferredVariant" data-i18n="prefVariantLabel">Preferred Variants</label>
+              <input id="preferredVariant" name="preferredVariant" />
+            </div>
+            <div class="field">
+              <label for="deliveryNote" data-i18n="deliveryNoteLabel">Delivery Note</label>
+              <input id="deliveryNote" name="deliveryNote" />
+            </div>
+            <div class="field full">
+              <label for="orderSummary" data-i18n="orderSummaryLabel">Order Summary</label>
+              <textarea id="orderSummary" name="orderSummary" readonly></textarea>
+            </div>
+            <div class="field full">
+              <button class="btn btn-primary" type="submit" data-i18n="submitBtn">Submit Order</button>
+            </div>
+          </form>
+
+          <div id="formStatus" class="status"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <article class="card about-card">
+          <div class="section-head compact">
+            <div>
+              <h2 data-i18n="aboutTitle">About SobujCare</h2>
+              <p data-i18n="aboutText">SobujCare is a Bangladesh-focused herbal soap brand built around clean design, natural positioning, and premium everyday care.</p>
+            </div>
+          </div>
+          <ul class="list">
+            <li data-i18n="aboutL1">Designed for local customers with future export-friendly branding</li>
+            <li data-i18n="aboutL2">Perfect for handmade herbal soap launch and later product expansion</li>
+            <li data-i18n="aboutL3">Easy to maintain website hosted free on GitHub Pages</li>
+          </ul>
+        </article>
+
+        <article class="card about-card">
+          <div class="section-head compact">
+            <div>
+              <h2 data-i18n="webTitle">Website Setup Notes</h2>
+              <p data-i18n="webText">Before launch, replace the Google Script URL in the code and update your social links, contact details, and product photos.</p>
+            </div>
+          </div>
+          <ul class="list">
+            <li data-i18n="webL1">Host on GitHub Pages now, connect custom domain later</li>
+            <li data-i18n="webL2">Use your Google Sheet to store all orders in one place</li>
+            <li data-i18n="webL3">Edit prices and package rules easily in one script block</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-grid">
+        <article class="card contact-card">
+          <div class="section-head compact">
+            <div>
+              <h2 data-i18n="contactTitle">Let’s Connect</h2>
+              <p data-i18n="contactText">Add your real business contact details here before publishing.</p>
+            </div>
+          </div>
+          <div class="contact-list">
+            <div class="contact-item"><strong data-i18n="contactPhoneTitle">Phone</strong><div class="small">+880 1XXXXXXXXX</div></div>
+            <div class="contact-item"><strong data-i18n="contactEmailTitle">Email</strong><div class="small">hello@sobujcare.com</div></div>
+            <div class="contact-item"><strong data-i18n="contactSocialTitle">Facebook</strong><div class="small">facebook.com/sobujcare</div></div>
+          </div>
+        </article>
+
+        <article class="card contact-card">
+          <div class="section-head compact">
+            <div>
+              <h2 data-i18n="launchTitle">Launch Tip</h2>
+              <p data-i18n="launchText">Start with 3 soaps, 3 packages, and this simple order flow. Then improve based on customer response.</p>
+            </div>
+          </div>
+          <a href="#calculator" class="btn btn-primary" data-i18n="launchBtn">Start Taking Orders</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="card footer-card">
+        <div>
+          <strong>SobujCare</strong>
+          <div class="small" data-i18n="footerText">Premium herbal soap website template with BN/EN toggle, live pricing calculator, and Google Sheets order capture.</div>
+        </div>
+        <div class="small">© <span id="year"></span> SobujCare</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
