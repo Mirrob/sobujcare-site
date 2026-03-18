@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbynz6BgzE4CTS3EU6TLY9jDO39_5bepV7JnfcNsB_RH6ebTe05N8ijmbQqW3Fb-MQaT/exec";
 
 const packagePricing = {
   single: { label: { en: "Single Bar", bn: "সিঙ্গেল বার" }, base: 199, units: 1, discount: 0 },
@@ -148,37 +148,75 @@ function showStatus(type, message) {
 
 orderForm.addEventListener('submit', async (e) => {
   e.preventDefault();
+
   if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL.includes('PASTE_YOUR')) {
     showStatus('error', translations[currentLang].missingScript);
     return;
   }
 
   const formData = new FormData(orderForm);
+
   const payload = {
-    timestamp: new Date().toISOString(),
-    language: currentLang,
-    customerName: formData.get('customerName') || '',
+    name: formData.get('customerName') || '',
     phone: formData.get('phone') || '',
-    email: formData.get('email') || '',
-    district: formData.get('district') || '',
+    product: formData.get('preferredVariant') || '',
+    quantity: document.getElementById('quantity').value || '1',
     address: formData.get('address') || '',
-    preferredVariant: formData.get('preferredVariant') || '',
-    deliveryNote: formData.get('deliveryNote') || '',
-    selectedVariant1: variant1El.value,
-    selectedVariant2: variant2El.value,
-    packageType: packagePricing[packageTypeEl.value].label[currentLang],
-    quantity: quantityEl.value,
-    estimatedTotal: summaryTotalEl.textContent,
-    orderSummary: orderSummaryEl.value
+    message: formData.get('deliveryNote') || ''
   };
 
   try {
-    await fetch(GOOGLE_SCRIPT_URL, {
+    const checkRes = await fetch(GOOGLE_SCRIPT_URL, {
       method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
+      body: JSON.stringify({
+        action: 'checkOrder',
+        phone: payload.phone
+      })
     });
+
+    const checkData = await checkRes.json();
+
+    if (checkData.status !== 'ok') {
+      showStatus('error', 'Could not check current order status.');
+      return;
+    }
+
+    if (!checkData.canOrder) {
+      showStatus(
+        'error',
+        `Current Status: ${checkData.currentStatus} | ${checkData.currentMessage}`
+      );
+      return;
+    }
+
+    const submitRes = await fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      body: JSON.stringify({
+        action: 'submitOrder',
+        ...payload
+      })
+    });
+
+    const submitData = await submitRes.json();
+
+    if (submitData.status === 'success') {
+      orderForm.reset();
+      document.getElementById('quantity').value = 1;
+      updateCalculator();
+      showStatus('success', 'Order submitted successfully. Status: Pending');
+    } else if (submitData.status === 'blocked') {
+      showStatus(
+        'error',
+        `Current Status: ${submitData.currentStatus} | ${submitData.currentMessage}`
+      );
+    } else {
+      showStatus('error', submitData.message || 'Order submission failed.');
+    }
+
+  } catch (err) {
+    showStatus('error', 'Connection error. Please try again.');
+  }
+});
 
     orderForm.reset();
     quantityEl.value = 1;
