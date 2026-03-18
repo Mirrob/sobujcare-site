@@ -259,6 +259,11 @@ const summaryTotalEl = document.getElementById('summaryTotal');
 const orderSummaryEl = document.getElementById('orderSummary');
 const orderForm = document.getElementById('orderForm');
 const formStatus = document.getElementById('formStatus');
+const customerNameEl = document.getElementById('customerName');
+const phoneEl = document.getElementById('phone');
+const addressEl = document.getElementById('address');
+const preferredVariantEl = document.getElementById('preferredVariant');
+const deliveryNoteEl = document.getElementById('deliveryNote');
 
 yearEl.textContent = new Date().getFullYear();
 
@@ -295,9 +300,33 @@ function updateCalculator() {
   summaryDiscountEl.textContent = formatBDT(savings);
   summaryTotalEl.textContent = formatBDT(total);
 
+  const nameVal = customerNameEl ? customerNameEl.value.trim() : '';
+  const phoneVal = phoneEl ? phoneEl.value.trim() : '';
+  const addressVal = addressEl ? addressEl.value.trim() : '';
+  const preferredVal = preferredVariantEl ? preferredVariantEl.value.trim() : '';
+  const noteVal = deliveryNoteEl ? deliveryNoteEl.value.trim() : '';
+
   const summaryText = currentLang === 'bn'
-    ? `প্যাকেজ: ${pack.label.bn}\nভ্যারিয়েন্ট: ${variant1El.value}, ${variant2El.value}\nপরিমাণ: ${qty}\nমোট: ${formatBDT(total)}\nসেভিংস: ${formatBDT(savings)}`
-    : `Package: ${pack.label.en}\nVariants: ${variant1El.value}, ${variant2El.value}\nQuantity: ${qty}\nTotal: ${formatBDT(total)}\nSavings: ${formatBDT(savings)}`;
+    ? `নাম: ${nameVal || '-'}
+ফোন: ${phoneVal || '-'}
+প্যাকেজ: ${pack.label.bn}
+ভ্যারিয়েন্ট: ${variant1El.value}, ${variant2El.value}
+পরিমাণ: ${qty}
+পছন্দের ভ্যারিয়েন্ট: ${preferredVal || '-'}
+ঠিকানা: ${addressVal || '-'}
+ডেলিভারি নোট: ${noteVal || '-'}
+মোট: ${formatBDT(total)}
+সেভিংস: ${formatBDT(savings)}`
+    : `Name: ${nameVal || '-'}
+Phone: ${phoneVal || '-'}
+Package: ${pack.label.en}
+Variants: ${variant1El.value}, ${variant2El.value}
+Quantity: ${qty}
+Preferred Variants: ${preferredVal || '-'}
+Address: ${addressVal || '-'}
+Delivery Note: ${noteVal || '-'}
+Total: ${formatBDT(total)}
+Savings: ${formatBDT(savings)}`;
 
   orderSummaryEl.value = summaryText;
 }
@@ -305,6 +334,19 @@ function updateCalculator() {
 [packageTypeEl, quantityEl, variant1El, variant2El].forEach(el => {
   el.addEventListener('input', updateCalculator);
   el.addEventListener('change', updateCalculator);
+});
+
+[
+  customerNameEl,
+  phoneEl,
+  addressEl,
+  preferredVariantEl,
+  deliveryNoteEl
+].forEach(el => {
+  if (el) {
+    el.addEventListener('input', updateCalculator);
+    el.addEventListener('change', updateCalculator);
+  }
 });
 
 langButtons.forEach(btn => {
