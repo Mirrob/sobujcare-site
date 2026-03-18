@@ -264,6 +264,8 @@ const phoneEl = document.getElementById('phone');
 const addressEl = document.getElementById('address');
 const preferredVariantEl = document.getElementById('preferredVariant');
 const deliveryNoteEl = document.getElementById('deliveryNote');
+const whatsappOrderBtn = document.getElementById('whatsappOrderBtn');
+const WHATSAPP_NUMBER = '94761419422';
 
 yearEl.textContent = new Date().getFullYear();
 
@@ -356,6 +358,41 @@ langButtons.forEach(btn => {
 function showStatus(type, message) {
   formStatus.className = `status show ${type}`;
   formStatus.textContent = message;
+}
+
+function buildWhatsAppMessage() {
+  const packKey = packageTypeEl.value;
+  const qty = Math.max(1, parseInt(quantityEl.value || '1', 10));
+  const pack = packagePricing[packKey];
+  const total = pack.base * qty;
+  const savings = pack.discount * qty;
+
+  const nameVal = customerNameEl ? customerNameEl.value.trim() : '';
+  const phoneVal = phoneEl ? phoneEl.value.trim() : '';
+  const addressVal = addressEl ? addressEl.value.trim() : '';
+  const preferredVal = preferredVariantEl ? preferredVariantEl.value.trim() : '';
+  const noteVal = deliveryNoteEl ? deliveryNoteEl.value.trim() : '';
+
+  return `Hello, I want to order from SobujCare.
+
+Name: ${nameVal || '-'}
+Phone: ${phoneVal || '-'}
+Package: ${pack.label.en}
+Variants: ${variant1El.value}, ${variant2El.value}
+Quantity: ${qty}
+Preferred Variants: ${preferredVal || '-'}
+Address: ${addressVal || '-'}
+Delivery Note: ${noteVal || '-'}
+Total: ${formatBDT(total)}
+Savings: ${formatBDT(savings)}`;
+}
+
+if (whatsappOrderBtn) {
+  whatsappOrderBtn.addEventListener('click', () => {
+    const message = buildWhatsAppMessage();
+    const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    window.open(waUrl, '_blank');
+  });
 }
 
 orderForm.addEventListener('submit', async (e) => {
