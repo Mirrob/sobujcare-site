@@ -34,10 +34,37 @@ body {
   font-family: Inter, Arial, sans-serif;
   color: var(--text);
   overflow-x: hidden;
+  position: relative;
   background:
-    radial-gradient(circle at top left, rgba(201, 169, 107, 0.12), transparent 28%),
-    radial-gradient(circle at top right, rgba(102, 170, 87, 0.10), transparent 26%),
-    linear-gradient(180deg, #fdfaf5 0%, #f6f8f3 52%, #f8fbf7 100%);
+    radial-gradient(circle at 8% 8%, rgba(201, 169, 107, 0.18), transparent 24%),
+    radial-gradient(circle at 92% 10%, rgba(102, 170, 87, 0.15), transparent 22%),
+    radial-gradient(circle at 18% 72%, rgba(164, 212, 131, 0.14), transparent 20%),
+    radial-gradient(circle at 88% 76%, rgba(255, 222, 173, 0.12), transparent 18%),
+    linear-gradient(180deg, #fcfbf4 0%, #f2f8ef 45%, #f7fbf3 100%);
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body::before {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255,255,255,0.58), transparent 20%),
+    radial-gradient(circle at 84% 26%, rgba(255,255,255,0.42), transparent 18%),
+    radial-gradient(circle at 28% 86%, rgba(255,255,255,0.32), transparent 15%);
+}
+
+body::after {
+  opacity: .36;
+  background-image:
+    radial-gradient(circle at 15px 15px, rgba(84, 135, 72, 0.05) 0, rgba(84, 135, 72, 0.05) 2px, transparent 2px),
+    radial-gradient(circle at 45px 45px, rgba(201, 169, 107, 0.05) 0, rgba(201, 169, 107, 0.05) 2px, transparent 2px);
+  background-size: 120px 120px;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -54,9 +81,9 @@ button, input, select, textarea { font: inherit; }
   top: 0;
   z-index: 50;
   backdrop-filter: blur(16px);
-  background: rgba(249, 245, 238, 0.88);
+  background: linear-gradient(180deg, rgba(252, 249, 241, 0.95), rgba(245, 248, 239, 0.88));
   border-bottom: 1px solid rgba(46, 125, 50, 0.08);
-  box-shadow: 0 4px 20px rgba(20, 40, 20, 0.04);
+  box-shadow: 0 8px 24px rgba(20, 40, 20, 0.06);
 }
 
 .nav {
@@ -219,9 +246,9 @@ button, input, select, textarea { font: inherit; }
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--green-800), var(--green-700));
+  background: linear-gradient(135deg, #2f8a39 0%, #59b548 100%);
   color: var(--white);
-  box-shadow: 0 14px 30px rgba(46,125,50,.20);
+  box-shadow: 0 16px 34px rgba(46,125,50,.24);
 }
 
 .btn-primary:hover {
@@ -248,8 +275,20 @@ section {
   content: "";
   position: absolute;
   inset: 16px 0 0 0;
-  background: linear-gradient(180deg, rgba(255,255,255,0.45), rgba(244,249,242,0.55));
+  background: linear-gradient(180deg, rgba(255,255,255,0.42), rgba(241,248,238,0.68));
   pointer-events: none;
+  z-index: 0;
+}
+
+.section-soft::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 10% 14%, rgba(201,169,107,0.08), transparent 18%),
+    radial-gradient(circle at 88% 22%, rgba(102,170,87,0.10), transparent 18%),
+    radial-gradient(circle at 74% 84%, rgba(183, 223, 158, 0.10), transparent 18%);
   z-index: 0;
 }
 
@@ -281,7 +320,7 @@ section > .container {
 
 .hero-card,
 .card {
-  background: rgba(255,255,255,.78);
+  background: linear-gradient(180deg, rgba(255,255,255,0.90), rgba(250,252,246,0.82));
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -793,8 +832,9 @@ h3 {
 
 .calc-box-premium {
   background:
-    radial-gradient(circle at top right, rgba(201,169,107,0.08), transparent 28%),
-    linear-gradient(180deg, #f7fbf5, #fffefb);
+    radial-gradient(circle at top right, rgba(201,169,107,0.13), transparent 28%),
+    radial-gradient(circle at bottom left, rgba(102,170,87,0.09), transparent 30%),
+    linear-gradient(180deg, #f8fcf5, #fffef9);
 }
 
 .form-grid {
@@ -1060,7 +1100,6 @@ section::after {
   padding: 14px 16px;
   gap: 10px;
   text-align: left;
-  cursor: pointer;
   transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease;
   background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(248,250,244,0.9));
 }
@@ -1437,5 +1476,178 @@ section::after {
 
   .footer-card {
     padding: 18px;
+  }
+}
+
+
+.hero,
+#calculator,
+#products,
+#gallery,
+#packages,
+#about,
+#contact {
+  position: relative;
+}
+
+.hero::before,
+#calculator::before,
+#products::before,
+#gallery::before,
+#packages::before,
+#about::before,
+#contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 6% 14%, rgba(201,169,107,0.08), transparent 16%),
+    radial-gradient(circle at 94% 20%, rgba(102,170,87,0.08), transparent 18%);
+  z-index: 0;
+}
+
+.hero > .container,
+#calculator > .container,
+#products > .container,
+#gallery > .container,
+#packages > .container,
+#about > .container,
+#contact > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.product-card,
+.package-card,
+.gallery-card,
+.calc-card,
+.form-card,
+.about-card,
+.contact-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card::before,
+.package-card::before,
+.gallery-card::before,
+.calc-card::before,
+.form-card::before,
+.about-card::before,
+.contact-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(102,170,87,0.85), rgba(201,169,107,0.82), rgba(102,170,87,0.6));
+  opacity: .95;
+}
+
+.products-grid .product-card:nth-child(2)::before,
+.gallery-grid .gallery-card:nth-child(2)::before,
+.packages-grid .package-card:nth-child(2)::before {
+  background: linear-gradient(90deg, rgba(214,168,79,0.85), rgba(117,179,90,0.82), rgba(255,221,140,0.7));
+}
+
+.products-grid .product-card:nth-child(3)::before,
+.gallery-grid .gallery-card:nth-child(3)::before,
+.packages-grid .package-card:nth-child(3)::before {
+  background: linear-gradient(90deg, rgba(129,184,212,0.78), rgba(102,170,87,0.8), rgba(201,169,107,0.72));
+}
+
+.products-grid .product-card:nth-child(4)::before {
+  background: linear-gradient(90deg, rgba(123,140,97,0.86), rgba(201,169,107,0.82), rgba(102,170,87,0.72));
+}
+
+.hero-main-card {
+  background:
+    radial-gradient(circle at top right, rgba(102,170,87,0.12), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(201,169,107,0.09), transparent 28%),
+    linear-gradient(180deg, rgba(255,255,255,0.94), rgba(248,252,245,0.88));
+}
+
+.hero-showcase {
+  background:
+    radial-gradient(circle at top right, rgba(102,170,87,0.16), transparent 32%),
+    radial-gradient(circle at bottom left, rgba(201,169,107,0.12), transparent 30%),
+    linear-gradient(180deg, #fffdf8 0%, #f2f8ef 100%);
+}
+
+.eyebrow {
+  background: linear-gradient(180deg, #eff9ea 0%, #e7f4e1 100%);
+}
+
+.nav-panel.open {
+  background: linear-gradient(180deg, rgba(252,249,241,0.98), rgba(240,247,236,0.97));
+}
+
+.trust-note {
+  border-radius: 18px;
+  border: 1px solid rgba(46,125,50,.10);
+}
+
+.trust-note-toggle {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.trust-note-detail {
+  display: grid;
+  gap: 12px;
+}
+
+.trust-note-detail p {
+  margin: 0;
+}
+
+.trust-note-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn-whatsapp-inline {
+  min-height: 42px;
+  padding: 0 16px;
+  font-size: .9rem;
+  background: linear-gradient(135deg, #2fb344 0%, #25d366 100%);
+  color: #fff;
+  box-shadow: 0 14px 24px rgba(37, 211, 102, 0.18);
+}
+
+.btn-whatsapp-inline:hover {
+  box-shadow: 0 18px 28px rgba(37, 211, 102, 0.24);
+}
+
+.topbar .brand,
+.section-head h2,
+.product-top h3,
+.gallery-copy h3,
+.price,
+.summary-row.total,
+.calc-row strong,
+.summary-row strong {
+  text-shadow: 0 1px 0 rgba(255,255,255,0.25);
+}
+
+@media (max-width: 760px) {
+  .btn-whatsapp-inline {
+    width: 100%;
+  }
+
+  .hero::before,
+  #calculator::before,
+  #products::before,
+  #gallery::before,
+  #packages::before,
+  #about::before,
+  #contact::before {
+    background:
+      radial-gradient(circle at 8% 10%, rgba(201,169,107,0.10), transparent 20%),
+      radial-gradient(circle at 92% 14%, rgba(102,170,87,0.10), transparent 22%);
   }
 }
