@@ -404,32 +404,47 @@
             </div>
 
             <div class="trust-note-grid top-gap">
-              <button class="trust-note trust-note-toggle active" type="button" data-trust-card="process" aria-expanded="true">
-                <span class="trust-note-top">
-                  <span class="trust-note-icon">⚡</span>
-                  <span class="trust-note-title" data-i18n="calcTrust1">Fast order process</span>
-                  <span class="trust-note-arrow" aria-hidden="true"></span>
-                </span>
-                <span class="trust-note-detail" data-i18n="calcTrust1Detail">Submit your order in seconds and our team will confirm it quickly with a simple follow-up.</span>
-              </button>
+              <div class="trust-note active" data-trust-card="process">
+                <button class="trust-note-toggle" type="button" aria-expanded="true">
+                  <span class="trust-note-top">
+                    <span class="trust-note-icon">⚡</span>
+                    <span class="trust-note-title" data-i18n="calcTrust1">Fast order process</span>
+                    <span class="trust-note-arrow" aria-hidden="true"></span>
+                  </span>
+                </button>
+                <div class="trust-note-detail">
+                  <p data-i18n="calcTrust1Detail">Submit your order in seconds and our team will confirm it quickly with a simple follow-up.</p>
+                </div>
+              </div>
 
-              <button class="trust-note trust-note-toggle" type="button" data-trust-card="whatsapp" aria-expanded="false">
-                <span class="trust-note-top">
-                  <span class="trust-note-icon">💬</span>
-                  <span class="trust-note-title" data-i18n="calcTrust2">WhatsApp support</span>
-                  <span class="trust-note-arrow" aria-hidden="true"></span>
-                </span>
-                <span class="trust-note-detail" data-i18n="calcTrust2Detail">Need help before ordering? Tap to chat with us on WhatsApp for quick product and delivery support.</span>
-              </button>
+              <div class="trust-note" data-trust-card="whatsapp">
+                <button class="trust-note-toggle" type="button" aria-expanded="false">
+                  <span class="trust-note-top">
+                    <span class="trust-note-icon">💬</span>
+                    <span class="trust-note-title" data-i18n="calcTrust2">WhatsApp support</span>
+                    <span class="trust-note-arrow" aria-hidden="true"></span>
+                  </span>
+                </button>
+                <div class="trust-note-detail">
+                  <p data-i18n="calcTrust2Detail">Need help before ordering? Tap to chat with us on WhatsApp for quick product and delivery support.</p>
+                  <div class="trust-note-actions">
+                    <button class="btn btn-whatsapp-inline" type="button" id="trustWhatsAppBtn" data-i18n="calcTrust2Cta">Chat on WhatsApp</button>
+                  </div>
+                </div>
+              </div>
 
-              <button class="trust-note trust-note-toggle" type="button" data-trust-card="savings" aria-expanded="false">
-                <span class="trust-note-top">
-                  <span class="trust-note-icon">🎁</span>
-                  <span class="trust-note-title" data-i18n="calcTrust3">Bundle savings</span>
-                  <span class="trust-note-arrow" aria-hidden="true"></span>
-                </span>
-                <span class="trust-note-detail" data-i18n="calcTrust3Detail">Family and gift packs give better value per soap, making larger orders feel smarter and more premium.</span>
-              </button>
+              <div class="trust-note" data-trust-card="savings">
+                <button class="trust-note-toggle" type="button" aria-expanded="false">
+                  <span class="trust-note-top">
+                    <span class="trust-note-icon">🎁</span>
+                    <span class="trust-note-title" data-i18n="calcTrust3">Bundle savings</span>
+                    <span class="trust-note-arrow" aria-hidden="true"></span>
+                  </span>
+                </button>
+                <div class="trust-note-detail">
+                  <p data-i18n="calcTrust3Detail">Family and gift packs give better value per soap, making larger orders feel smarter and more premium.</p>
+                </div>
+              </div>
             </div>
 
             <p class="calc-note top-gap-sm" data-i18n="deliveryNote">Free delivery on orders of 50+ items.</p>
