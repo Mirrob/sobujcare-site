@@ -428,7 +428,7 @@
                 <div class="trust-note-detail">
                   <p data-i18n="calcTrust2Detail">Need help before ordering? Tap to chat with us on WhatsApp for quick product and delivery support.</p>
                   <div class="trust-note-actions">
-                    <button class="btn btn-whatsapp-inline" type="button" id="trustWhatsAppBtn" data-i18n="calcTrust2Cta">Chat on WhatsApp</button>
+                    <button class="btn btn-whatsapp-inline" type="button" id="trustWhatsAppBtn" data-i18n="calcTrust2Cta">Open WhatsApp</button>
                   </div>
                 </div>
               </div>
@@ -573,18 +573,30 @@
             </div>
 
             <div class="contact-list">
-              <div class="contact-item">
-                <strong data-i18n="contactPhoneTitle">Phone</strong>
-                <div class="small">+880 1XXXXXXXXX</div>
-              </div>
-              <div class="contact-item">
-                <strong data-i18n="contactEmailTitle">Email</strong>
-                <div class="small">hello@sobujcare.com</div>
-              </div>
-              <div class="contact-item">
-                <strong data-i18n="contactSocialTitle">Facebook</strong>
-                <div class="small">facebook.com/sobujcare</div>
-              </div>
+              <a class="contact-item contact-link phone-link" href="tel:+8801XXXXXXXXX" aria-label="Call SobujCare phone">
+                <span class="contact-icon" aria-hidden="true">📞</span>
+                <span class="contact-copy">
+                  <strong data-i18n="contactPhoneTitle">Phone</strong>
+                  <span class="small">+880 1XXXXXXXXX</span>
+                </span>
+                <span class="contact-cta" data-i18n="contactPhoneCta">Call now</span>
+              </a>
+              <a class="contact-item contact-link email-link" href="mailto:hello@sobujcare.com" aria-label="Email SobujCare">
+                <span class="contact-icon" aria-hidden="true">✉️</span>
+                <span class="contact-copy">
+                  <strong data-i18n="contactEmailTitle">Email</strong>
+                  <span class="small">hello@sobujcare.com</span>
+                </span>
+                <span class="contact-cta" data-i18n="contactEmailCta">Send email</span>
+              </a>
+              <a class="contact-item contact-link facebook-link" href="https://facebook.com/sobujcare" target="_blank" rel="noopener noreferrer" aria-label="Open SobujCare Facebook">
+                <span class="contact-icon" aria-hidden="true">f</span>
+                <span class="contact-copy">
+                  <strong data-i18n="contactSocialTitle">Facebook</strong>
+                  <span class="small">facebook.com/sobujcare</span>
+                </span>
+                <span class="contact-cta" data-i18n="contactSocialCta">Open page</span>
+              </a>
             </div>
           </article>
 
