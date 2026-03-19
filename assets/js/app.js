@@ -22,6 +22,10 @@ const translations = {
     heroText: "Discover SobujCare’s premium soaps made with herbal tradition and organic-inspired care for clean, gentle, and natural daily skincare. Start with our best-selling range and choose a package that fits your needs.",
     heroPrimary: "Explore Products",
     heroSecondary: "Calculate Order",
+    heroTrust1: "Natural ingredients",
+    heroTrust2: "Gentle daily care",
+    heroTrust3: "Made for Bangladesh",
+    heroPhotoBadge: "Premium Herbal Collection",
 
     point1Title: "Natural Ingredients",
     point1Text: "Neem, turmeric, charcoal, aloe vera and skin-friendly oils.",
@@ -35,9 +39,15 @@ const translations = {
     heroPriceLine2Value: "Up to 15%",
     heroPriceLine3: "Custom order form",
     heroPriceLine3Value: "Google Sheet Ready",
+    heroSupportLabel: "WhatsApp support",
+    heroSupportValue: "Fast response",
+    heroBundleLabel: "Premium bundles",
+    heroBundleValue: "Gift-ready look",
 
+    productsKicker: "Featured Range",
     productsTitle: "Our Soap Collection",
     productsText: "Start with a focused product line that is easy to market and simple for customers to understand.",
+    orderVariantLink: "Order this variant",
 
     p1Title: "Neem Antibacterial",
     p1Desc: "Made for oily skin and everyday freshness.",
@@ -60,6 +70,14 @@ const translations = {
     p3L2: "Strong look for modern buyers",
     p3L3: "Perfect for combo offers",
 
+    p4Title: "Aloe Vera",
+    p4Desc: "Soothing soap for hydration and fresh glowing skin.",
+    p4Badge: "Natural",
+    p4L1: "Hydrates and refreshes skin deeply",
+    p4L2: "Cooling and soothing effect",
+    p4L3: "Perfect for daily gentle skincare",
+
+    galleryKicker: "Premium Presentation",
     galleryTitle: "Packaging Preview",
     galleryText: "Use these sample visuals first, then replace them later with your final product photos and real packaging shots.",
     g1Title: "Neem Premium Box",
@@ -69,6 +87,7 @@ const translations = {
     g3Title: "Gift Bundle Mockup",
     g3Text: "A stronger premium presentation for combo sales and gifting campaigns.",
 
+    packagesKicker: "Smart Bundles",
     packagesTitle: "Packages & Bundles",
     packagesText: "Use package pricing to increase average order value and make customer choice easier.",
     pack1Title: "Starter Pack",
@@ -90,8 +109,15 @@ const translations = {
     pack3L2: "Premium eco presentation",
     pack3L3: "Best total savings",
 
+    calcKicker: "Easy Ordering",
+    calcSectionTitle: "Calculate Your Order & Place It Instantly",
+    calcSectionText: "Choose your preferred soap variants, see bundle savings live, and send your order with a clean premium experience.",
     calcTitle: "Live Order Calculator",
     calcText: "Choose soaps, package type, and quantity to see the live estimated total.",
+    calcTrust1: "Fast order process",
+    calcTrust2: "WhatsApp support",
+    calcTrust3: "Bundle savings",
+
     variant1Label: "Variant 1",
     variant2Label: "Variant 2",
     packageLabel: "Package Type",
@@ -112,25 +138,27 @@ const translations = {
     addressLabel: "Delivery Address",
     prefVariantLabel: "Preferred Variants",
     deliveryNoteLabel: "Delivery Note",
-    orderSummaryLabel: "Order Summary",
+    orderSummaryLabel: "Final Order Summary",
     submitBtn: "Submit Order",
+    whatsappBtn: "Order via WhatsApp",
 
+    aboutKicker: "Why SobujCare",
+    aboutSectionTitle: "Natural Care With A Premium Feel",
+    aboutSectionText: "SobujCare is positioned as a clean, modern soap brand for customers who want gentle daily care, attractive packaging, and simple ordering.",
     aboutTitle: "About SobujCare",
     aboutText: "SobujCare is a Bangladesh-focused soap brand built around clean design, natural positioning, and premium everyday care.",
     aboutL1: "Designed for local customers with future export-friendly branding",
     aboutL2: "Perfect for a premium soap launch and later product expansion",
     aboutL3: "Clean visual identity suitable for online sales and gifting",
-
-    webTitle: "Website Setup Notes",
-    webText: "Before launch, replace the Google Script URL in the code and update your social links, contact details, and product photos.",
-    webL1: "Host on GitHub Pages now, connect custom domain later",
-    webL2: "Use your Google Sheet to store all orders in one place",
-    webL3: "Edit prices and package rules easily in one script block",
+    aboutRightTitle: "Why Customers Will Love It",
+    aboutRightText: "A premium soap brand should look trustworthy, giftable, and easy to order. This layout helps support that first impression.",
+    aboutRightL1: "Clean and premium product presentation",
+    aboutRightL2: "Easy bundle selection for higher order value",
+    aboutRightL3: "Modern design that feels attractive on desktop and mobile",
 
     contactKick: "Support & Contact",
     contactSectionTitle: "Order & Support",
     contactSectionText: "Get in touch for orders, delivery updates, and product inquiries. We’re here to help you choose the right SobujCare soap for your daily care.",
-
     contactTitle: "Contact SobujCare",
     contactText: "For orders, support, and business inquiries, reach us through the contact details below.",
     contactPhoneTitle: "Phone",
@@ -145,7 +173,10 @@ const translations = {
 
     submitSuccess: "Order submitted successfully.",
     submitError: "Order submission failed. Please check the Apps Script URL.",
-    missingScript: "Please add your Google Apps Script web app URL before using the form."
+    missingScript: "Please add your Google Apps Script web app URL before using the form.",
+    checkStatusError: "Could not check current order status.",
+    statusPending: "Order submitted successfully. Status: Pending",
+    connectionError: "Connection error. Please try again."
   },
 
   bn: {
@@ -162,6 +193,10 @@ const translations = {
     heroText: "SobujCare-এর প্রিমিয়াম সাবান হারবাল ঐতিহ্য ও অর্গানিক-অনুপ্রাণিত যত্নে তৈরি, যা পরিষ্কার, কোমল এবং প্রাকৃতিক দৈনন্দিন ত্বকের যত্নে সহায়তা করে। আমাদের জনপ্রিয় রেঞ্জ থেকে আপনার প্রয়োজন অনুযায়ী প্যাকেজ বেছে নিন।",
     heroPrimary: "পণ্য দেখুন",
     heroSecondary: "মূল্য হিসাব করুন",
+    heroTrust1: "প্রাকৃতিক উপাদান",
+    heroTrust2: "কোমল দৈনন্দিন যত্ন",
+    heroTrust3: "বাংলাদেশের জন্য তৈরি",
+    heroPhotoBadge: "প্রিমিয়াম হারবাল কালেকশন",
 
     point1Title: "প্রাকৃতিক উপাদান",
     point1Text: "নিম, হলুদ, চারকোল, অ্যালোভেরা ও ত্বক-বান্ধব তেল।",
@@ -175,9 +210,15 @@ const translations = {
     heroPriceLine2Value: "সর্বোচ্চ ১৫%",
     heroPriceLine3: "কাস্টম অর্ডার ফর্ম",
     heroPriceLine3Value: "গুগল শিট রেডি",
+    heroSupportLabel: "হোয়াটসঅ্যাপ সাপোর্ট",
+    heroSupportValue: "দ্রুত সাড়া",
+    heroBundleLabel: "প্রিমিয়াম বান্ডেল",
+    heroBundleValue: "উপহারের জন্য উপযোগী",
 
+    productsKicker: "নির্বাচিত সংগ্রহ",
     productsTitle: "আমাদের সাবান সংগ্রহ",
     productsText: "শুরুতে সহজে মার্কেটিং করা যায় এবং গ্রাহক সহজে বুঝতে পারে—এমন ফোকাসড প্রোডাক্ট লাইন রাখুন।",
+    orderVariantLink: "এই ভ্যারিয়েন্ট অর্ডার করুন",
 
     p1Title: "নিম অ্যান্টিব্যাকটেরিয়াল",
     p1Desc: "তৈলাক্ত ত্বক ও দৈনিক সতেজতার জন্য।",
@@ -200,6 +241,14 @@ const translations = {
     p3L2: "আধুনিক ক্রেতাদের জন্য স্ট্রং লুক",
     p3L3: "কম্বো অফারের জন্য দারুণ",
 
+    p4Title: "অ্যালোভেরা",
+    p4Desc: "হাইড্রেশন ও সতেজ উজ্জ্বল ত্বকের জন্য কোমল সাবান।",
+    p4Badge: "প্রাকৃতিক",
+    p4L1: "ত্বক গভীরভাবে আর্দ্র ও সতেজ রাখে",
+    p4L2: "শীতল ও স্নিগ্ধ অনুভূতি দেয়",
+    p4L3: "প্রতিদিনের কোমল স্কিনকেয়ারের জন্য উপযুক্ত",
+
+    galleryKicker: "প্রিমিয়াম উপস্থাপন",
     galleryTitle: "প্যাকেজিং প্রিভিউ",
     galleryText: "এখন এই স্যাম্পল ভিজ্যুয়াল ব্যবহার করুন, পরে আপনার ফাইনাল পণ্য ও আসল প্যাকেজিং ছবি দিয়ে বদলে দিন।",
     g1Title: "নিম প্রিমিয়াম বক্স",
@@ -209,6 +258,7 @@ const translations = {
     g3Title: "গিফট বান্ডেল মকআপ",
     g3Text: "কম্বো সেলস ও গিফট ক্যাম্পেইনের জন্য আরও প্রিমিয়াম উপস্থাপন।",
 
+    packagesKicker: "স্মার্ট বান্ডেল",
     packagesTitle: "প্যাকেজ ও বান্ডেল",
     packagesText: "প্যাকেজ প্রাইসিং ব্যবহার করলে অর্ডার ভ্যালু বাড়ে এবং গ্রাহকের সিদ্ধান্ত নেওয়া সহজ হয়।",
     pack1Title: "স্টার্টার প্যাক",
@@ -230,8 +280,15 @@ const translations = {
     pack3L2: "প্রিমিয়াম ইকো প্রেজেন্টেশন",
     pack3L3: "সর্বোচ্চ মোট সেভিংস",
 
+    calcKicker: "সহজ অর্ডার",
+    calcSectionTitle: "আপনার অর্ডার হিসাব করুন ও সাথে সাথে অর্ডার দিন",
+    calcSectionText: "পছন্দের সাবান ভ্যারিয়েন্ট বেছে নিন, লাইভ সেভিংস দেখুন এবং সুন্দর প্রিমিয়াম অভিজ্ঞতায় অর্ডার পাঠান।",
     calcTitle: "লাইভ অর্ডার ক্যালকুলেটর",
     calcText: "সাবান, প্যাকেজ টাইপ ও পরিমাণ বেছে নিয়ে মোট মূল্য দেখুন।",
+    calcTrust1: "দ্রুত অর্ডার প্রক্রিয়া",
+    calcTrust2: "হোয়াটসঅ্যাপ সাপোর্ট",
+    calcTrust3: "বান্ডেল সেভিংস",
+
     variant1Label: "ভ্যারিয়েন্ট ১",
     variant2Label: "ভ্যারিয়েন্ট ২",
     packageLabel: "প্যাকেজ টাইপ",
@@ -252,25 +309,27 @@ const translations = {
     addressLabel: "ডেলিভারি ঠিকানা",
     prefVariantLabel: "পছন্দের ভ্যারিয়েন্ট",
     deliveryNoteLabel: "ডেলিভারি নোট",
-    orderSummaryLabel: "অর্ডার সারসংক্ষেপ",
+    orderSummaryLabel: "চূড়ান্ত অর্ডার সারসংক্ষেপ",
     submitBtn: "অর্ডার সাবমিট করুন",
+    whatsappBtn: "হোয়াটসঅ্যাপে অর্ডার করুন",
 
+    aboutKicker: "কেন SobujCare",
+    aboutSectionTitle: "প্রাকৃতিক যত্নের সাথে প্রিমিয়াম অনুভূতি",
+    aboutSectionText: "SobujCare একটি পরিচ্ছন্ন ও আধুনিক সাবান ব্র্যান্ড, যা কোমল দৈনন্দিন যত্ন, আকর্ষণীয় প্যাকেজিং এবং সহজ অর্ডার অভিজ্ঞতা দেয়।",
     aboutTitle: "SobujCare সম্পর্কে",
     aboutText: "SobujCare হলো বাংলাদেশ-কেন্দ্রিক একটি সাবান ব্র্যান্ড, যা পরিচ্ছন্ন ডিজাইন, প্রাকৃতিক অবস্থান এবং প্রিমিয়াম দৈনন্দিন যত্নকে কেন্দ্র করে গড়ে উঠেছে।",
     aboutL1: "স্থানীয় গ্রাহকদের জন্য ডিজাইন, ভবিষ্যতে এক্সপোর্ট-ফ্রেন্ডলি ব্র্যান্ডিংসহ",
     aboutL2: "প্রিমিয়াম সাবান ব্র্যান্ড লঞ্চ এবং পরবর্তী পণ্য সম্প্রসারণের জন্য উপযুক্ত",
     aboutL3: "অনলাইন বিক্রয় ও উপহারের জন্য উপযোগী পরিচ্ছন্ন ভিজ্যুয়াল পরিচিতি",
-
-    webTitle: "ওয়েবসাইট সেটআপ নোট",
-    webText: "লাইভ করার আগে কোডে Google Script URL, সোশ্যাল লিংক, যোগাযোগ তথ্য ও প্রোডাক্ট ছবি আপডেট করুন।",
-    webL1: "এখন GitHub Pages এ হোস্ট করুন, পরে custom domain যুক্ত করুন",
-    webL2: "সব অর্ডার এক জায়গায় রাখতে Google Sheet ব্যবহার করুন",
-    webL3: "একটি script block থেকেই মূল্য ও package rule edit করা যাবে",
+    aboutRightTitle: "গ্রাহকরা কেন এটি পছন্দ করবেন",
+    aboutRightText: "একটি প্রিমিয়াম সাবান ব্র্যান্ডকে বিশ্বাসযোগ্য, উপহার উপযোগী এবং সহজে অর্ডারযোগ্য দেখাতে হয়। এই লেআউট সেই প্রথম ধারণাকে শক্তিশালী করে।",
+    aboutRightL1: "পরিচ্ছন্ন ও প্রিমিয়াম পণ্য উপস্থাপন",
+    aboutRightL2: "উচ্চ অর্ডার ভ্যালুর জন্য সহজ বান্ডেল নির্বাচন",
+    aboutRightL3: "ডেস্কটপ ও মোবাইলে আকর্ষণীয় আধুনিক ডিজাইন",
 
     contactKick: "সহায়তা ও যোগাযোগ",
     contactSectionTitle: "অর্ডার ও সহায়তা",
     contactSectionText: "অর্ডার, ডেলিভারি আপডেট এবং পণ্য সম্পর্কিত যেকোনো তথ্যের জন্য আমাদের সাথে যোগাযোগ করুন। আপনার দৈনন্দিন যত্নের জন্য উপযুক্ত SobujCare সাবান বেছে নিতে আমরা সহায়তা করব।",
-
     contactTitle: "SobujCare যোগাযোগ",
     contactText: "অর্ডার, সহায়তা এবং ব্যবসায়িক যোগাযোগের জন্য নিচের তথ্য ব্যবহার করুন।",
     contactPhoneTitle: "ফোন",
@@ -285,7 +344,10 @@ const translations = {
 
     submitSuccess: "অর্ডার সফলভাবে সাবমিট হয়েছে।",
     submitError: "অর্ডার সাবমিট করা যায়নি। Apps Script URL চেক করুন।",
-    missingScript: "ফর্ম ব্যবহারের আগে Google Apps Script web app URL যুক্ত করুন।"
+    missingScript: "ফর্ম ব্যবহারের আগে Google Apps Script web app URL যুক্ত করুন।",
+    checkStatusError: "বর্তমান অর্ডারের স্ট্যাটাস যাচাই করা যায়নি।",
+    statusPending: "অর্ডার সফলভাবে সাবমিট হয়েছে। স্ট্যাটাস: Pending",
+    connectionError: "সংযোগে সমস্যা হয়েছে। আবার চেষ্টা করুন।"
   }
 };
 
@@ -420,7 +482,20 @@ function buildWhatsAppMessage() {
   const preferredVal = preferredVariantEl ? preferredVariantEl.value.trim() : '';
   const noteVal = deliveryNoteEl ? deliveryNoteEl.value.trim() : '';
 
-  return `Hello, I want to order from SobujCare.
+  return currentLang === 'bn'
+    ? `হ্যালো, আমি SobujCare থেকে অর্ডার করতে চাই।
+
+নাম: ${nameVal || '-'}
+ফোন: ${phoneVal || '-'}
+প্যাকেজ: ${pack.label.bn}
+ভ্যারিয়েন্ট: ${variant1El.value}, ${variant2El.value}
+পরিমাণ: ${qty}
+পছন্দের ভ্যারিয়েন্ট: ${preferredVal || '-'}
+ঠিকানা: ${addressVal || '-'}
+ডেলিভারি নোট: ${noteVal || '-'}
+মোট: ${formatBDT(total)}
+সেভিংস: ${formatBDT(savings)}`
+    : `Hello, I want to order from SobujCare.
 
 Name: ${nameVal || '-'}
 Phone: ${phoneVal || '-'}
@@ -473,7 +548,7 @@ orderForm.addEventListener('submit', async (e) => {
     const checkData = await checkRes.json();
 
     if (checkData.status !== 'ok') {
-      showStatus('error', 'Could not check current order status.');
+      showStatus('error', translations[currentLang].checkStatusError);
       return;
     }
 
@@ -499,18 +574,18 @@ orderForm.addEventListener('submit', async (e) => {
       orderForm.reset();
       document.getElementById('quantity').value = 1;
       updateCalculator();
-      showStatus('success', 'Order submitted successfully. Status: Pending');
+      showStatus('success', translations[currentLang].statusPending);
     } else if (submitData.status === 'blocked') {
       showStatus(
         'error',
         `Current Status: ${submitData.currentStatus} | ${submitData.currentMessage}`
       );
     } else {
-      showStatus('error', submitData.message || 'Order submission failed.');
+      showStatus('error', submitData.message || translations[currentLang].submitError);
     }
 
   } catch (err) {
-    showStatus('error', 'Connection error. Please try again.');
+    showStatus('error', translations[currentLang].connectionError);
   }
 });
 
