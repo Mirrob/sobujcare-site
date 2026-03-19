@@ -15,23 +15,39 @@
         <span>SobujCare</span>
       </a>
 
-      <nav class="nav-links">
-        <a href="#products" data-i18n="navProducts">Products</a>
-        <a href="#gallery" data-i18n="navGallery">Gallery</a>
-        <a href="#packages" data-i18n="navPackages">Packages</a>
-        <a href="#calculator" data-i18n="navOrder">Order</a>
-        <a href="#about" data-i18n="navAbout">About</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
-      </nav>
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobileNavPanel"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-      <div class="nav-actions">
-        <div class="lang-toggle" aria-label="Language toggle">
-          <button type="button" class="active" data-lang-btn="en">EN</button>
-          <button type="button" data-lang-btn="bn">BN</button>
+      <div class="nav-panel" id="mobileNavPanel">
+        <nav class="nav-links">
+          <a href="#products" data-i18n="navProducts">Products</a>
+          <a href="#gallery" data-i18n="navGallery">Gallery</a>
+          <a href="#packages" data-i18n="navPackages">Packages</a>
+          <a href="#calculator" data-i18n="navOrder">Order</a>
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <div class="lang-toggle" aria-label="Language toggle">
+            <button type="button" class="active" data-lang-btn="en">EN</button>
+            <button type="button" data-lang-btn="bn">BN</button>
+          </div>
+          <a href="#calculator" class="btn btn-primary" data-i18n="navButton">Order Now</a>
         </div>
-        <a href="#calculator" class="btn btn-primary" data-i18n="navButton">Order Now</a>
       </div>
     </div>
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
   </header>
 
   <main>
