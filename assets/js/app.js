@@ -127,10 +127,9 @@ const translations = {
     summaryQty: "Order Quantity",
     summaryDiscount: "Bundle Savings",
     summaryTotal: "Estimated Total",
-    calcNote: "You can adjust the pricing rules easily in the JavaScript section before going live.",
 
     orderTitle: "Place an Order",
-    orderText: "Orders can be sent straight to Google Sheets using your Google Apps Script web app URL.",
+    orderText: "Fill in your details and place your order easily. Our team will confirm and process your order shortly.",
     nameLabel: "Full Name",
     phoneLabel: "Phone Number",
     emailLabel: "Email (Optional)",
@@ -298,10 +297,10 @@ const translations = {
     summaryQty: "অর্ডারের পরিমাণ",
     summaryDiscount: "বান্ডেল সেভিংস",
     summaryTotal: "আনুমানিক মোট",
-    calcNote: "লাইভের আগে JavaScript অংশে সহজেই মূল্য ও প্যাকেজের নিয়ম পরিবর্তন করতে পারবেন।",
+    
 
     orderTitle: "অর্ডার করুন",
-    orderText: "Google Apps Script web app URL ব্যবহার করে সরাসরি Google Sheet-এ অর্ডার পাঠানো যাবে।",
+    orderText: "আপনার তথ্য পূরণ করে সহজেই অর্ডার করুন। আমাদের টিম দ্রুত আপনার অর্ডার নিশ্চিত করে প্রসেস করবে।",
     nameLabel: "পূর্ণ নাম",
     phoneLabel: "ফোন নম্বর",
     emailLabel: "ইমেইল (ঐচ্ছিক)",
