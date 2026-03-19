@@ -375,6 +375,10 @@ const addressEl = document.getElementById('address');
 const preferredVariantEl = document.getElementById('preferredVariant');
 const deliveryNoteEl = document.getElementById('deliveryNote');
 const whatsappOrderBtn = document.getElementById('whatsappOrderBtn');
+const menuToggle = document.getElementById('menuToggle');
+const navPanel = document.getElementById('mobileNavPanel');
+const navOverlay = document.getElementById('navOverlay');
+const navLinkItems = document.querySelectorAll('.nav-links a, .nav-actions .btn');
 const WHATSAPP_NUMBER = '94761419422';
 
 yearEl.textContent = new Date().getFullYear();
@@ -469,6 +473,62 @@ function showStatus(type, message) {
   formStatus.className = `status show ${type}`;
   formStatus.textContent = message;
 }
+
+function openMobileMenu() {
+  if (!menuToggle || !navPanel || !navOverlay) return;
+  menuToggle.classList.add('active');
+  navPanel.classList.add('open');
+  navOverlay.classList.add('show');
+  menuToggle.setAttribute('aria-expanded', 'true');
+  document.body.classList.add('menu-open');
+}
+
+function closeMobileMenu() {
+  if (!menuToggle || !navPanel || !navOverlay) return;
+  menuToggle.classList.remove('active');
+  navPanel.classList.remove('open');
+  navOverlay.classList.remove('show');
+  menuToggle.setAttribute('aria-expanded', 'false');
+  document.body.classList.remove('menu-open');
+}
+
+function toggleMobileMenu() {
+  if (!navPanel) return;
+  if (navPanel.classList.contains('open')) {
+    closeMobileMenu();
+  } else {
+    openMobileMenu();
+  }
+}
+
+if (menuToggle) {
+  menuToggle.addEventListener('click', toggleMobileMenu);
+}
+
+if (navOverlay) {
+  navOverlay.addEventListener('click', closeMobileMenu);
+}
+
+navLinkItems.forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 760) {
+      closeMobileMenu();
+    }
+  });
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 760) {
+    closeMobileMenu();
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeMobileMenu();
+  }
+});
+
 
 function buildWhatsAppMessage() {
   const packKey = packageTypeEl.value;
