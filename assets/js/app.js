@@ -127,6 +127,7 @@ const translations = {
     summaryQty: "Order Quantity",
     summaryDiscount: "Bundle Savings",
     summaryTotal: "Estimated Total",
+    deliveryNote: "Enjoy free delivery on orders of 50+ items.",
 
     orderTitle: "Place an Order",
     orderText: "Fill in your details and place your order easily. Our team will confirm and process your order shortly.",
@@ -297,6 +298,7 @@ const translations = {
     summaryQty: "অর্ডারের পরিমাণ",
     summaryDiscount: "বান্ডেল সেভিংস",
     summaryTotal: "আনুমানিক মোট",
+    deliveryNote: "৫০ বা তার বেশি অর্ডারে ফ্রি ডেলিভারি উপভোগ করুন।",
     
 
     orderTitle: "অর্ডার করুন",
