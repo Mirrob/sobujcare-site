@@ -117,6 +117,9 @@ const translations = {
     calcTrust1: "Fast order process",
     calcTrust2: "WhatsApp support",
     calcTrust3: "Bundle savings",
+    calcTrust1Detail: "Submit your order in seconds and our team will confirm it quickly with a simple follow-up.",
+    calcTrust2Detail: "Need help before ordering? Tap to chat with us on WhatsApp for quick product and delivery support.",
+    calcTrust3Detail: "Family and gift packs give better value per soap, making larger orders feel smarter and more premium.",
 
     variant1Label: "Variant 1",
     variant2Label: "Variant 2",
@@ -288,6 +291,9 @@ const translations = {
     calcTrust1: "দ্রুত অর্ডার প্রক্রিয়া",
     calcTrust2: "হোয়াটসঅ্যাপ সাপোর্ট",
     calcTrust3: "বান্ডেল সেভিংস",
+    calcTrust1Detail: "মাত্র কয়েক সেকেন্ডে অর্ডার পাঠান, তারপর আমাদের টিম দ্রুত যোগাযোগ করে কনফার্ম করবে।",
+    calcTrust2Detail: "অর্ডারের আগে সহায়তা দরকার? WhatsApp-এ দ্রুত পণ্য ও ডেলিভারি সহায়তা পেতে ট্যাপ করুন।",
+    calcTrust3Detail: "ফ্যামিলি ও গিফট প্যাকে প্রতি সাবানে বেশি ভ্যালু পাওয়া যায়, তাই বড় অর্ডার আরও স্মার্ট ও প্রিমিয়াম মনে হয়।",
 
     variant1Label: "ভ্যারিয়েন্ট ১",
     variant2Label: "ভ্যারিয়েন্ট ২",
@@ -379,6 +385,7 @@ const menuToggle = document.getElementById('menuToggle');
 const navPanel = document.getElementById('mobileNavPanel');
 const navOverlay = document.getElementById('navOverlay');
 const navLinkItems = document.querySelectorAll('.nav-links a, .nav-actions .btn');
+const trustNoteToggles = document.querySelectorAll('.trust-note-toggle');
 const WHATSAPP_NUMBER = '94761419422';
 
 yearEl.textContent = new Date().getFullYear();
@@ -527,6 +534,27 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     closeMobileMenu();
   }
+});
+
+
+function setActiveTrustCard(card) {
+  if (!card) return;
+  trustNoteToggles.forEach(item => {
+    const isActive = item === card;
+    item.classList.toggle('active', isActive);
+    item.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+  });
+}
+
+trustNoteToggles.forEach(card => {
+  card.addEventListener('click', () => {
+    if (card.classList.contains('active')) {
+      card.classList.remove('active');
+      card.setAttribute('aria-expanded', 'false');
+      return;
+    }
+    setActiveTrustCard(card);
+  });
 });
 
 
