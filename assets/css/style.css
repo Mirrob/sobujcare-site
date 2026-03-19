@@ -1651,3 +1651,238 @@ section::after {
       radial-gradient(circle at 92% 14%, rgba(102,170,87,0.10), transparent 22%);
   }
 }
+
+
+/* Premium colorful refinement update */
+body {
+  background:
+    radial-gradient(circle at 8% 10%, rgba(255, 214, 102, 0.20), transparent 16%),
+    radial-gradient(circle at 92% 12%, rgba(102, 188, 106, 0.22), transparent 18%),
+    radial-gradient(circle at 18% 42%, rgba(195, 230, 173, 0.18), transparent 18%),
+    radial-gradient(circle at 86% 54%, rgba(255, 229, 164, 0.16), transparent 16%),
+    radial-gradient(circle at 20% 84%, rgba(130, 196, 118, 0.16), transparent 18%),
+    radial-gradient(circle at 84% 86%, rgba(227, 198, 122, 0.14), transparent 18%),
+    linear-gradient(180deg, #fffdf6 0%, #f2f8ee 42%, #f8fcf4 100%);
+}
+
+body::before {
+  background:
+    radial-gradient(circle at 10% 18%, rgba(255,255,255,0.64), transparent 20%),
+    radial-gradient(circle at 86% 20%, rgba(255,255,255,0.48), transparent 18%),
+    radial-gradient(circle at 26% 78%, rgba(255,255,255,0.34), transparent 16%),
+    radial-gradient(circle at 76% 74%, rgba(255,255,255,0.22), transparent 16%);
+}
+
+body::after {
+  opacity: .46;
+  background-image:
+    radial-gradient(circle at 16px 16px, rgba(84, 135, 72, 0.045) 0, rgba(84, 135, 72, 0.045) 2px, transparent 2px),
+    radial-gradient(circle at 42px 42px, rgba(201, 169, 107, 0.04) 0, rgba(201, 169, 107, 0.04) 2px, transparent 2px),
+    linear-gradient(135deg, transparent 0 48%, rgba(133, 181, 102, 0.03) 48% 52%, transparent 52%);
+  background-size: 120px 120px, 120px 120px, 180px 180px;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 8% 22%, rgba(195, 230, 173, 0.14), transparent 14%),
+    radial-gradient(circle at 92% 30%, rgba(255, 222, 150, 0.10), transparent 12%);
+}
+
+section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero::before {
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle, rgba(201, 169, 107, 0.18), transparent 66%);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 5%;
+  top: 8%;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(102,170,87,0.16), transparent 64%);
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.hero-card,
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.94), rgba(249,252,246,0.86));
+  box-shadow: 0 18px 38px rgba(37, 72, 36, 0.10), 0 10px 26px rgba(201,169,107,0.08);
+}
+
+.product-card, .package-card, .gallery-card, .about-card, .contact-card, .calc-card, .form-card {
+  border-color: rgba(82, 148, 75, 0.12);
+}
+
+.product-card:hover, .package-card:hover, .gallery-card:hover, .about-card:hover, .contact-card:hover, .calc-card:hover, .form-card:hover {
+  box-shadow: 0 26px 58px rgba(26, 68, 31, 0.14), 0 14px 30px rgba(201,169,107,0.12);
+}
+
+.product-image, .gallery-media img, .hero-photo {
+  box-shadow: 0 16px 34px rgba(34, 86, 41, 0.10);
+}
+
+.section-soft::before {
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,0.66), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(195,230,173,0.16), transparent 22%),
+    linear-gradient(180deg, rgba(255,255,255,0.54), rgba(237,247,236,0.76));
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2f8d35 0%, #58b74b 55%, #7bc85d 100%);
+}
+
+.btn-secondary {
+  background: linear-gradient(180deg, rgba(255,255,255,0.94), rgba(247,250,243,0.90));
+}
+
+.trust-note {
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 0;
+  text-align: left;
+  background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(247,251,243,0.90));
+  overflow: hidden;
+}
+
+.trust-note.active {
+  background:
+    radial-gradient(circle at top right, rgba(195,230,173,0.20), transparent 34%),
+    linear-gradient(180deg, rgba(255,255,255,0.98), rgba(241,249,237,0.94));
+}
+
+.trust-note-detail {
+  padding: 0 14px 14px;
+}
+
+.trust-note-detail p {
+  font-size: .95rem;
+  line-height: 1.7;
+}
+
+.btn-whatsapp-inline {
+  min-height: 46px;
+  height: auto;
+  width: 100%;
+  padding: 10px 16px;
+  line-height: 1.25;
+  white-space: normal;
+  text-align: center;
+  border-radius: 14px;
+  font-size: .94rem;
+}
+
+.contact-list {
+  gap: 14px;
+}
+
+.contact-link {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease, background .24s ease;
+  background:
+    radial-gradient(circle at top right, rgba(195,230,173,0.16), transparent 38%),
+    linear-gradient(180deg, rgba(255,255,255,0.96), rgba(246,250,242,0.90));
+}
+
+.contact-link:hover {
+  transform: translateY(-3px);
+  border-color: rgba(74, 145, 70, 0.18);
+  box-shadow: 0 18px 36px rgba(32,74,36,0.10), 0 10px 24px rgba(201,169,107,0.10);
+}
+
+.contact-copy {
+  display: grid;
+  min-width: 0;
+}
+
+.contact-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: var(--green-900);
+  background: linear-gradient(135deg, rgba(232,244,224,0.96), rgba(255,246,219,0.94));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6), 0 8px 18px rgba(20,40,20,0.06);
+}
+
+.facebook-link .contact-icon {
+  font-family: Arial, sans-serif;
+  font-size: 1.35rem;
+  color: #1877f2;
+}
+
+.contact-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(47,141,53,0.12), rgba(201,169,107,0.16));
+  color: var(--green-900);
+  font-size: .84rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.contact-item .small {
+  font-size: .94rem;
+}
+
+.contact-card, .about-card {
+  background:
+    radial-gradient(circle at top right, rgba(195,230,173,0.16), transparent 34%),
+    radial-gradient(circle at bottom left, rgba(255,225,160,0.10), transparent 30%),
+    linear-gradient(180deg, rgba(255,255,255,0.96), rgba(248,252,245,0.90));
+}
+
+.contact-cta-card {
+  background:
+    radial-gradient(circle at top right, rgba(255,221,140,0.18), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(102,170,87,0.16), transparent 26%),
+    linear-gradient(180deg, rgba(255,255,255,0.96), rgba(241,249,237,0.92));
+}
+
+.footer-card {
+  background:
+    radial-gradient(circle at top right, rgba(195,230,173,0.14), transparent 30%),
+    linear-gradient(180deg, rgba(255,255,255,0.94), rgba(248,251,244,0.90));
+}
+
+@media (max-width: 760px) {
+  .contact-link {
+    grid-template-columns: 48px 1fr;
+  }
+
+  .contact-cta {
+    grid-column: 1 / -1;
+    justify-self: start;
+    margin-left: 62px;
+  }
+
+  .btn-whatsapp-inline {
+    font-size: .9rem;
+  }
+}
