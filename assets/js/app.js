@@ -46,7 +46,7 @@ const translations = {
 
     productsKicker: "Featured Range",
     productsTitle: "Our Soap Collection",
-    productsText: "Start with a focused product line that is easy to market and simple for customers to understand.",
+    productsText: "Discover SobujCare’s carefully selected soap range designed for daily care, natural freshness, and a premium bathing experience.",
     orderVariantLink: "Order this variant",
 
     p1Title: "Neem Antibacterial",
@@ -79,7 +79,7 @@ const translations = {
 
     galleryKicker: "Premium Presentation",
     galleryTitle: "Packaging Preview",
-    galleryText: "Use these sample visuals first, then replace them later with your final product photos and real packaging shots.",
+    galleryText: "Our packaging is designed to give SobujCare a clean, premium, and gift-worthy look that feels attractive from the very first impression.",
     g1Title: "Neem Premium Box",
     g1Text: "Minimal kraft look with bold green strip for a strong shelf presence.",
     g2Title: "Turmeric Botanical Box",
@@ -89,7 +89,7 @@ const translations = {
 
     packagesKicker: "Smart Bundles",
     packagesTitle: "Packages & Bundles",
-    packagesText: "Use package pricing to increase average order value and make customer choice easier.",
+    packagesText: "Choose the package that matches your needs, whether for personal use, family care, or premium gifting.",
     pack1Title: "Starter Pack",
     pack1Desc: "Perfect for first-time buyers who want to try one or two variants.",
     pack1L1: "2 soaps of any variant",
@@ -217,7 +217,7 @@ const translations = {
 
     productsKicker: "নির্বাচিত সংগ্রহ",
     productsTitle: "আমাদের সাবান সংগ্রহ",
-    productsText: "শুরুতে সহজে মার্কেটিং করা যায় এবং গ্রাহক সহজে বুঝতে পারে—এমন ফোকাসড প্রোডাক্ট লাইন রাখুন।",
+    productsText: "SobujCare-এর যত্নসহকারে বাছাই করা সাবান সংগ্রহ দৈনন্দিন যত্ন, প্রাকৃতিক সতেজতা এবং প্রিমিয়াম গোসলের অভিজ্ঞতার জন্য তৈরি।",
     orderVariantLink: "এই ভ্যারিয়েন্ট অর্ডার করুন",
 
     p1Title: "নিম অ্যান্টিব্যাকটেরিয়াল",
@@ -250,7 +250,7 @@ const translations = {
 
     galleryKicker: "প্রিমিয়াম উপস্থাপন",
     galleryTitle: "প্যাকেজিং প্রিভিউ",
-    galleryText: "এখন এই স্যাম্পল ভিজ্যুয়াল ব্যবহার করুন, পরে আপনার ফাইনাল পণ্য ও আসল প্যাকেজিং ছবি দিয়ে বদলে দিন।",
+    galleryText: "SobujCare-এর প্যাকেজিং এমনভাবে ডিজাইন করা হয়েছে যাতে প্রথম দেখাতেই এটি পরিচ্ছন্ন, প্রিমিয়াম এবং উপহার দেওয়ার মতো আকর্ষণীয় মনে হয়।",
     g1Title: "নিম প্রিমিয়াম বক্স",
     g1Text: "শক্তিশালী শেল্ফ উপস্থিতির জন্য বোল্ড সবুজ স্ট্রিপসহ মিনিমাল ক্রাফট লুক।",
     g2Title: "টারমেরিক বোটানিক্যাল বক্স",
@@ -260,7 +260,7 @@ const translations = {
 
     packagesKicker: "স্মার্ট বান্ডেল",
     packagesTitle: "প্যাকেজ ও বান্ডেল",
-    packagesText: "প্যাকেজ প্রাইসিং ব্যবহার করলে অর্ডার ভ্যালু বাড়ে এবং গ্রাহকের সিদ্ধান্ত নেওয়া সহজ হয়।",
+    packagesText: "আপনার প্রয়োজন অনুযায়ী প্যাকেজ বেছে নিন—ব্যক্তিগত ব্যবহার, পারিবারিক যত্ন বা প্রিমিয়াম উপহারের জন্য।",
     pack1Title: "স্টার্টার প্যাক",
     pack1Desc: "নতুন ক্রেতাদের জন্য, যারা ১–২টি ভ্যারিয়েন্ট ট্রাই করতে চান।",
     pack1L1: "যেকোনো ২টি সাবান",
