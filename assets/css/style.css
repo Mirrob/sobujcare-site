@@ -479,8 +479,14 @@ h3 {
 
 .section-head p {
   color: var(--muted);
-  max-width: 760px;
+  max-width: 100%;
   line-height: 1.75;
+}
+
+@media (min-width: 1025px) {
+  .section-head p {
+    white-space: nowrap;
+  }
 }
 
 .section-head-rich {
