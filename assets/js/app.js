@@ -118,7 +118,7 @@ const translations = {
     calcTrust1Detail: "Submit your order in seconds and our team will confirm it quickly with a simple follow-up.",
     calcTrust2: "WhatsApp support",
     calcTrust2Detail: "Need help before ordering? Tap to chat with us on WhatsApp for quick product and delivery support.",
-    calcTrust2Cta: "Chat on WhatsApp",
+    calcTrust2Cta: "Open WhatsApp",
     calcTrust3: "Bundle savings",
     calcTrust3Detail: "Family and gift packs give better value per soap, making larger orders feel smarter and more premium.",
 
@@ -168,6 +168,9 @@ const translations = {
     contactPhoneTitle: "Phone",
     contactEmailTitle: "Email",
     contactSocialTitle: "Facebook",
+    contactPhoneCta: "Call now",
+    contactEmailCta: "Send email",
+    contactSocialCta: "Open page",
 
     launchTitle: "Why Order From Us",
     launchText: "Premium soaps for daily care, clean packaging for personal use or gifting, and easy ordering with quick support.",
@@ -293,7 +296,7 @@ const translations = {
     calcTrust1Detail: "মাত্র কয়েক সেকেন্ডে অর্ডার পাঠান, তারপর আমাদের টিম দ্রুত যোগাযোগ করে কনফার্ম করবে।",
     calcTrust2: "হোয়াটসঅ্যাপ সাপোর্ট",
     calcTrust2Detail: "অর্ডারের আগে সহায়তা দরকার? WhatsApp-এ দ্রুত পণ্য ও ডেলিভারি সহায়তা পেতে ট্যাপ করুন।",
-    calcTrust2Cta: "হোয়াটসঅ্যাপে চ্যাট করুন",
+    calcTrust2Cta: "WhatsApp খুলুন",
     calcTrust3: "বান্ডেল সেভিংস",
     calcTrust3Detail: "ফ্যামিলি ও গিফট প্যাকে প্রতি সাবানে বেশি ভ্যালু পাওয়া যায়, তাই বড় অর্ডার আরও স্মার্ট ও প্রিমিয়াম মনে হয়।",
 
@@ -344,6 +347,9 @@ const translations = {
     contactPhoneTitle: "ফোন",
     contactEmailTitle: "ইমেইল",
     contactSocialTitle: "ফেসবুক",
+    contactPhoneCta: "কল করুন",
+    contactEmailCta: "ইমেইল করুন",
+    contactSocialCta: "পেইজ খুলুন",
 
     launchTitle: "কেন আমাদের থেকে অর্ডার করবেন",
     launchText: "দৈনন্দিন যত্নের জন্য প্রিমিয়াম সাবান, ব্যক্তিগত ব্যবহার বা উপহারের জন্য পরিচ্ছন্ন প্যাকেজিং, এবং দ্রুত সহায়তাসহ সহজ অর্ডার ব্যবস্থা।",
