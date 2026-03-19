@@ -26,6 +26,12 @@ const translations = {
     heroTrust2: "Gentle daily care",
     heroTrust3: "Made for Bangladesh",
     heroPhotoBadge: "Premium Herbal Collection",
+    heroProof1Value: "1000+ Happy Customers",
+    heroProof1Label: "Loved for everyday freshness",
+    heroProof2Value: "Fast Delivery Across BD",
+    heroProof2Label: "Quick support and order follow-up",
+    heroProof3Value: "100% Herbal-Inspired Care",
+    heroProof3Label: "Premium ingredients and clean packaging",
 
     point1Title: "Natural Ingredients",
     point1Text: "Neem, turmeric, charcoal, aloe vera and skin-friendly oils.",
@@ -43,11 +49,15 @@ const translations = {
     heroSupportValue: "Fast response",
     heroBundleLabel: "Premium bundles",
     heroBundleValue: "Gift-ready look",
+    localTrust1: "Cash on Delivery Available",
+    localTrust2: "Delivery in 2–3 Days",
+    localTrust3: "WhatsApp & Call Support",
 
     productsKicker: "Featured Range",
     productsTitle: "Our Soap Collection",
     productsText: "Discover SobujCare’s carefully selected soap range designed for daily care, natural freshness, and a premium bathing experience.",
     orderVariantLink: "Order this variant",
+    productRating: "Loved by customers",
 
     p1Title: "Neem Antibacterial",
     p1Desc: "Made for oily skin and everyday freshness.",
@@ -177,6 +187,8 @@ const translations = {
     launchBtn: "Order Now",
 
     footerText: "SobujCare offers premium soaps crafted with herbal tradition and organic-inspired care for gentle daily freshness and a clean premium feel.",
+    floatingWhatsapp: "Chat on WhatsApp",
+    stickyOrderBtn: "Order Now",
 
     submitSuccess: "Order submitted successfully.",
     submitError: "Order submission failed. Please check the Apps Script URL.",
@@ -204,6 +216,12 @@ const translations = {
     heroTrust2: "কোমল দৈনন্দিন যত্ন",
     heroTrust3: "বাংলাদেশের জন্য তৈরি",
     heroPhotoBadge: "প্রিমিয়াম হারবাল কালেকশন",
+    heroProof1Value: "১০০০+ খুশি গ্রাহক",
+    heroProof1Label: "দৈনন্দিন সতেজতার জন্য পছন্দের",
+    heroProof2Value: "সারা বাংলাদেশে দ্রুত ডেলিভারি",
+    heroProof2Label: "দ্রুত সাপোর্ট ও অর্ডার ফলো-আপ",
+    heroProof3Value: "হারবাল-অনুপ্রাণিত প্রিমিয়াম কেয়ার",
+    heroProof3Label: "ভালো উপাদান ও পরিষ্কার প্যাকেজিং",
 
     point1Title: "প্রাকৃতিক উপাদান",
     point1Text: "নিম, হলুদ, চারকোল, অ্যালোভেরা ও ত্বক-বান্ধব তেল।",
@@ -221,11 +239,15 @@ const translations = {
     heroSupportValue: "দ্রুত সাড়া",
     heroBundleLabel: "প্রিমিয়াম বান্ডেল",
     heroBundleValue: "উপহারের জন্য উপযোগী",
+    localTrust1: "ক্যাশ অন ডেলিভারি উপলভ্য",
+    localTrust2: "২–৩ দিনের মধ্যে ডেলিভারি",
+    localTrust3: "হোয়াটসঅ্যাপ ও কল সাপোর্ট",
 
     productsKicker: "নির্বাচিত সংগ্রহ",
     productsTitle: "আমাদের সাবান সংগ্রহ",
     productsText: "SobujCare-এর যত্নসহকারে বাছাই করা সাবান সংগ্রহ দৈনন্দিন যত্ন, প্রাকৃতিক সতেজতা এবং প্রিমিয়াম গোসলের অভিজ্ঞতার জন্য তৈরি।",
     orderVariantLink: "এই ভ্যারিয়েন্ট অর্ডার করুন",
+    productRating: "গ্রাহকদের পছন্দের",
 
     p1Title: "নিম অ্যান্টিব্যাকটেরিয়াল",
     p1Desc: "তৈলাক্ত ত্বক ও দৈনিক সতেজতার জন্য।",
@@ -347,15 +369,17 @@ const translations = {
     contactPhoneTitle: "ফোন",
     contactEmailTitle: "ইমেইল",
     contactSocialTitle: "ফেসবুক",
-    contactPhoneCta: "কল করুন",
-    contactEmailCta: "ইমেইল করুন",
-    contactSocialCta: "পেইজ খুলুন",
+    contactPhoneCta: "এখনই কল করুন",
+    contactEmailCta: "ইমেইল পাঠান",
+    contactSocialCta: "পেজ খুলুন",
 
     launchTitle: "কেন আমাদের থেকে অর্ডার করবেন",
     launchText: "দৈনন্দিন যত্নের জন্য প্রিমিয়াম সাবান, ব্যক্তিগত ব্যবহার বা উপহারের জন্য পরিচ্ছন্ন প্যাকেজিং, এবং দ্রুত সহায়তাসহ সহজ অর্ডার ব্যবস্থা।",
     launchBtn: "এখনই অর্ডার করুন",
 
     footerText: "SobujCare নিয়ে এসেছে প্রিমিয়াম সাবান, যা হারবাল ঐতিহ্য ও অর্গানিক-অনুপ্রাণিত যত্নে তৈরি, দৈনন্দিন সতেজতা এবং প্রিমিয়াম অনুভূতির জন্য।",
+    floatingWhatsapp: "হোয়াটসঅ্যাপে চ্যাট করুন",
+    stickyOrderBtn: "অর্ডার করুন",
 
     submitSuccess: "অর্ডার সফলভাবে সাবমিট হয়েছে।",
     submitError: "অর্ডার সাবমিট করা যায়নি। Apps Script URL চেক করুন।",
@@ -396,6 +420,7 @@ const navLinkItems = document.querySelectorAll('.nav-links a, .nav-actions .btn'
 const trustNoteCards = document.querySelectorAll('.trust-note');
 const trustNoteToggles = document.querySelectorAll('.trust-note-toggle');
 const trustWhatsAppBtn = document.getElementById('trustWhatsAppBtn');
+const floatingWhatsAppBtn = document.getElementById('floatingWhatsAppBtn');
 const WHATSAPP_NUMBER = '94761419422';
 
 yearEl.textContent = new Date().getFullYear();
@@ -631,6 +656,14 @@ if (whatsappOrderBtn) {
 if (trustWhatsAppBtn) {
   trustWhatsAppBtn.addEventListener('click', (e) => {
     e.stopPropagation();
+    const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(buildWhatsAppSupportMessage())}`;
+    window.open(waUrl, '_blank');
+  });
+}
+
+if (floatingWhatsAppBtn) {
+  floatingWhatsAppBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(buildWhatsAppSupportMessage())}`;
     window.open(waUrl, '_blank');
   });
